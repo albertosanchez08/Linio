@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/plusImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/productImageView"
+        app:layout_constraintTop_toTopOf="@+id/productImageView"
+        app:srcCompat="@drawable/nd_ic_plus_30" />
+
+    <ImageView
+        android:id="@+id/plus48ImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/productImageView"
+        app:layout_constraintTop_toBottomOf="@+id/plusImageView"
+        app:srcCompat="@drawable/nd_ic_plus_48_30" />
+
+    <ImageView
+        android:id="@+id/airplaneImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/productImageView"
+        app:layout_constraintTop_toBottomOf="@+id/newProductImageView"
+        app:srcCompat="@drawable/nd_ic_international_30" />
+
+    <ImageView
+        android:id="@+id/freeShippingImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/newProductImageView"
+        app:layout_constraintTop_toBottomOf="@+id/airplaneImageView"
+        app:srcCompat="@drawable/nd_ic_free_shipping_30" />
+
+    <ImageView
+        android:id="@+id/refurbishedImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/productImageView"
+        app:layout_constraintTop_toBottomOf="@+id/plus48ImageView"
+        app:srcCompat="@drawable/nd_ic_refurbished_30" />
+
+    <ImageView
+        android:id="@+id/newProductImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/productImageView"
+        app:layout_constraintTop_toBottomOf="@+id/refurbishedImageView"
+        app:srcCompat="@drawable/nd_ic_new_30" />
+
+    <ImageView
+        android:id="@+id/favoriteImageVw"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/productImageView"
+        app:layout_constraintTop_toTopOf="@+id/productImageView"
+        app:srcCompat="@drawable/nd_ic_add_fav_on_32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

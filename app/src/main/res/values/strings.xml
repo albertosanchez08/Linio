@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Favoritos</string>
+    <string name="collection_label">Collection Name</string>
+    <string name="all_favorites_label">Todos mis favoritos (%1$d)</string>
+</resources>
